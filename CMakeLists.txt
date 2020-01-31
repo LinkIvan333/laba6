@@ -33,6 +33,8 @@ add_library(picosha2 INTERFACE
 )
 add_library(logs INTERFACE
         )
+add_library(header INTERFACE
+        )
 
 add_executable(source
         ${CMAKE_CURRENT_SOURCE_DIR}/sources/source.cpp
@@ -41,7 +43,10 @@ add_executable(source
 target_include_directories(source
   PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
-
+target_include_directories(
+        header
+        INTERFACE $<BUILD_INTERFACE:${${PROJECT_NAME}_SOURCE_DIR}/include>
+        $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)
 target_include_directories(
         picosha2
         INTERFACE $<BUILD_INTERFACE:${${PROJECT_NAME}_SOURCE_DIR}/include>
@@ -51,7 +56,8 @@ target_include_directories(
         INTERFACE $<BUILD_INTERFACE:${${PROJECT_NAME}_SOURCE_DIR}/include>
         $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)
 target_link_libraries(source picosha2 logs)
-target_link_libraries(logs INTERFACE Boost::log Boost::filesystem Boost::system)
+target_link_libraries(logs INTERFACE Boost::log Boost::thread Boost::filesystem Boost::system)
+target_link_libraries(header INTERFACE Boost::log Boost::thread Boost::filesystem Boost::system)
 enable_testing()
 add_test(NAME unit_tests COMMAND tests) 
 
