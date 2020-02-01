@@ -21,26 +21,24 @@
 namespace logs{
 
         void init() {
-            auto sinkFile = boost::log::add_file_log(
-                    boost::log::keywords::file_name = "logs/log_%N.log",
+            auto logFileT = boost::log::add_file_log(
+                    boost::log::keywords::file_name = "logs/log_trace.log",
                     boost::log::keywords::rotation_size = 128 * 1024 * 1024,
                     boost::log::keywords::format =
                             (boost::log::expressions::stream << boost::log::expressions::format_date_time<boost::posix_time::ptime>(
                                     "TimeStamp", "%Y-%m-%d %H:%M:%S")
                                           << ": <" << boost::log::trivial::severity << "> "
                                           << boost::log::expressions::smessage));
-            sinkFile->set_filter(boost::log::trivial::severity >= boost::log::trivial::trace);
-
-            auto sinkConsole = boost::log::add_console_log(
-                    std::cout,
+            logFileT->set_filter(boost::log::trivial::severity >= boost::log::trivial::trace);
+            auto logFileI = boost::log::add_file_log(
+                    boost::log::keywords::file_name = "logs/log_info.log",
+                    boost::log::keywords::rotation_size = 128 * 1024 * 1024,
                     boost::log::keywords::format =
                             (boost::log::expressions::stream << boost::log::expressions::format_date_time<boost::posix_time::ptime>(
                                     "TimeStamp", "%Y-%m-%d %H:%M:%S")
-                                          << ": <" << boost::log::trivial::severity << "> "
-                                          << boost::log::expressions::smessage));
-            sinkConsole->set_filter(boost::log::trivial::severity >= boost::log::trivial::info);
-
-            boost::log::add_common_attributes();
+                                                             << ": <" << boost::log::trivial::severity << "> "
+                                                             << boost::log::expressions::smessage));
+            logFileI->set_filter(boost::log::trivial::severity >= boost::log::trivial::info);
         }
 
         void logTrace(const std::string &data, const std::string &hash) {
