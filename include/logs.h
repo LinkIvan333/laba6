@@ -1,10 +1,9 @@
 //
 // Created by zamot on 30.01.2020.
 //
-#include <boost/log/trivial.hpp>
-#ifndef SOURCE_LOGS_H
-#define SOURCE_LOGS_H
 
+#ifndef INCLUDE_LOGS_H_
+#define INCLUDE_LOGS_H_
 
 #include <boost/log/expressions.hpp>
 #include <boost/log/sinks.hpp>
@@ -56,4 +55,4 @@ namespace logs{
         }
 }
 
-#endif //SOURCE_LOGS_H
+#endif // INCLUDE_LOGS_H_
