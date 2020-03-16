@@ -1,5 +1,5 @@
 //
-// Created by zamot on 30.01.2020.
+// Created by LinkIvan333 on 30.01.2020.
 //
 
 #ifndef INCLUDE_LOGS_H_
@@ -20,12 +20,12 @@
 namespace logs{
 
         void init() {
+            boost::log::core::get()->add_global_attribute("TimeStamp", boost::log::attributes::local_clock());
             auto logFileT = boost::log::add_file_log(
                     boost::log::keywords::file_name = "logs/log_trace.log",
                     boost::log::keywords::rotation_size = 128 * 1024 * 1024,
                     boost::log::keywords::format =
-                            (boost::log::expressions::stream << boost::log::expressions::format_date_time<boost::posix_time::ptime>(
-                                    "TimeStamp", "%Y-%m-%d %H:%M:%S")
+            (boost::log::expressions::stream << boost::log::expressions::format_date_time< boost::posix_time::ptime >("TimeStamp", "%Y-%m-%d %H:%M:%S")
                                           << ": <" << boost::log::trivial::severity << "> "
                                           << boost::log::expressions::smessage));
             logFileT->set_filter(boost::log::trivial::severity >= boost::log::trivial::trace);
@@ -33,8 +33,7 @@ namespace logs{
                     boost::log::keywords::file_name = "logs/log_info.log",
                     boost::log::keywords::rotation_size = 128 * 1024 * 1024,
                     boost::log::keywords::format =
-                            (boost::log::expressions::stream << boost::log::expressions::format_date_time<boost::posix_time::ptime>(
-                                    "TimeStamp", "%Y-%m-%d %H:%M:%S")
+            (boost::log::expressions::stream << boost::log::expressions::format_date_time< boost::posix_time::ptime >("TimeStamp", "%Y-%m-%d %H:%M:%S")
                                                              << ": <" << boost::log::trivial::severity << "> "
                                                              << boost::log::expressions::smessage));
             logFileI->set_filter(boost::log::trivial::severity >= boost::log::trivial::info);

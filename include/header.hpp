@@ -28,10 +28,10 @@ namespace header {
         }
     }
 
-    void startTreads(){
+    void startTreads(unsigned int m){
         logs::init();
         boost::thread_group threads;
-        for (unsigned int i = 0; i < std::thread::hardware_concurrency(); i++)
+        for (unsigned int i = 0; i < m; ++i)
             threads.create_thread(boost::bind(runner, boost::cref(i)));
         threads.join_all();
     }

@@ -1,4 +1,18 @@
-C:\Users\zamot\.CLion2019.2\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/c/Git/laba6
+C:\Users\zamot\.CLion2019.3\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/d/Projects/laba6
+-- The C compiler identification is GNU 7.4.0
+-- The CXX compiler identification is GNU 7.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++.exe
+-- Check for working CXX compiler: /usr/bin/c++.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 -- [hunter] Calculating Toolchain-SHA1
 -- [hunter] Calculating Config-SHA1
 -- [hunter] HUNTER_ROOT: /home/zamot/.hunter
@@ -6,7 +20,553 @@ C:\Users\zamot\.CLion2019.2\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE
 -- [hunter] GTEST_ROOT: /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Install (ver.: 1.8.0-hunter-p11)
 -- [hunter] BOOST_ROOT: /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Install (ver.: 1.70.0-p0)
 -- [hunter] BOOST_ROOT: /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Install (ver.: 1.70.0-p0)
+-- [hunter] Building Boost (component: log)
+loading initial cache file /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/cache.cmake
+loading initial cache file /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Build/Boost/__log/args.cmake
+-- The C compiler identification is GNU 7.4.0
+-- The CXX compiler identification is GNU 7.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++.exe
+-- Check for working CXX compiler: /usr/bin/c++.exe -- works
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Build/Boost/__log/Build
+Scanning dependencies of target Boost-log
+[ 12%] Creating directories for 'Boost-log'
+[ 25%] Performing download step (download, verify and extract) for 'Boost-log'
+-- verifying file...
+       file='/home/zamot/.hunter/_Base/Download/Boost/1.70.0-p0/e6bb97b/v1.70.0-p0.tar.gz'
+-- File already exists and hash match (skip download):
+  file='/home/zamot/.hunter/_Base/Download/Boost/1.70.0-p0/e6bb97b/v1.70.0-p0.tar.gz'
+  SHA1='e6bb97b5109c7c15ea459cf2b1a9d52cbf88a89e'
+-- extracting...
+     src='/home/zamot/.hunter/_Base/Download/Boost/1.70.0-p0/e6bb97b/v1.70.0-p0.tar.gz'
+     dst='/home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Build/Boost/__log/Source'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 37%] No patch step for 'Boost-log'
+[ 50%] Performing update step for 'Boost-log'
+[ 62%] Performing configure step for 'Boost-log'
+Dummy patch command
+Building Boost.Build engine with toolset gcc... tools/build/src/engine/bin.cygwinx86_64/b2
+Detecting Python version... 2.7
+Detecting Python root... /usr
+Unicode/ICU support for Boost.Regex?... not found.
+Generating Boost.Build configuration in project-config.jam for gcc...
+
+Bootstrapping is done. To build, run:
+
+    ./b2
+    
+To generate header files, run:
+
+    ./b2 headers
+
+To adjust configuration, edit 'project-config.jam'.
+Further information:
+
+   - Command line help:
+     ./b2 --help
+     
+   - Getting started guide: 
+     http://www.boost.org/more/getting_started/unix-variants.html
+     
+   - Boost.Build documentation:
+     http://www.boost.org/build/
+
+[ 75%] Performing build step for 'Boost-log'
+Performing configuration checks
+
+    - default address-model    : 64-bit
+    - default architecture     : x86
+
+Building the Boost C++ Libraries.
+
+
+    - native-atomic-int32-supported : yes
+    - native-syslog-supported  : yes
+    - pthread-supports-robust-mutexes : no
+    - has_icu builds           : no
+    - lockfree boost::atomic_flag : yes
+    - compiler-supports-ssse3  : yes
+    - compiler-supports-avx2   : yes
+
+Component configuration:
+
+    - atomic                   : not building
+    - chrono                   : not building
+    - container                : not building
+    - context                  : not building
+    - contract                 : not building
+    - coroutine                : not building
+    - date_time                : not building
+    - exception                : not building
+    - fiber                    : not building
+    - filesystem               : not building
+    - graph                    : not building
+    - graph_parallel           : not building
+    - headers                  : not building
+    - iostreams                : not building
+    - locale                   : not building
+    - log                      : building
+    - math                     : not building
+    - mpi                      : not building
+    - program_options          : not building
+    - python                   : not building
+    - random                   : not building
+    - regex                    : not building
+    - serialization            : not building
+    - stacktrace               : not building
+    - system                   : not building
+    - test                     : not building
+    - thread                   : not building
+    - timer                    : not building
+    - type_erasure             : not building
+    - wave                     : not building
+
+...patience...
+...patience...
+...patience...
+...found 5335 targets...
+...updating 284 targets...
+gcc.compile.c++ bin.v2/libs/atomic/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/lockpool.o
+gcc.archive bin.v2/libs/atomic/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/libboost_atomic-mt-d-x64.a
+common.copy /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Build/Boost/__log/Source/stage/lib/libboost_atomic-mt-d-x64.a
+gcc.compile.c++ bin.v2/libs/date_time/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/gregorian/greg_month.o
+gcc.compile.c++ bin.v2/libs/date_time/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/gregorian/greg_weekday.o
+gcc.compile.c++ bin.v2/libs/date_time/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/gregorian/date_generators.o
+gcc.archive bin.v2/libs/date_time/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/libboost_date_time-mt-d-x64.a
+common.copy /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Build/Boost/__log/Source/stage/lib/libboost_date_time-mt-d-x64.a
+gcc.compile.c++ bin.v2/libs/filesystem/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/codecvt_error_category.o
+gcc.compile.c++ bin.v2/libs/filesystem/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/operations.o
+gcc.compile.c++ bin.v2/libs/filesystem/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/path.o
+gcc.compile.c++ bin.v2/libs/filesystem/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/path_traits.o
+gcc.compile.c++ bin.v2/libs/filesystem/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/portability.o
+gcc.compile.c++ bin.v2/libs/filesystem/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/unique_path.o
+gcc.compile.c++ bin.v2/libs/filesystem/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/utf8_codecvt_facet.o
+gcc.compile.c++ bin.v2/libs/filesystem/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/windows_file_codecvt.o
+gcc.archive bin.v2/libs/filesystem/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/libboost_filesystem-mt-d-x64.a
+common.copy /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Build/Boost/__log/Source/stage/lib/libboost_filesystem-mt-d-x64.a
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/c_regex_traits.o
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/cpp_regex_traits.o
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/cregex.o
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/fileiter.o
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/icu.o
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/instances.o
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/posix_api.o
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/regex.o
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/regex_debug.o
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/regex_raw_buffer.o
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/regex_traits_defaults.o
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/static_mutex.o
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/w32_regex_traits.o
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/wc_regex_traits.o
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/wide_posix_api.o
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/winstances.o
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/usinstances.o
+gcc.archive bin.v2/libs/regex/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/libboost_regex-mt-d-x64.a
+common.copy /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Build/Boost/__log/Source/stage/lib/libboost_regex-mt-d-x64.a
+gcc.compile.c++ bin.v2/libs/thread/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/pthread/thread.o
+gcc.compile.c++ bin.v2/libs/thread/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/pthread/once.o
+gcc.compile.c++ bin.v2/libs/thread/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/future.o
+gcc.archive bin.v2/libs/thread/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/libboost_thread-mt-d-x64.a
+common.copy /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Build/Boost/__log/Source/stage/lib/libboost_thread-mt-d-x64.a
+gcc.compile.c++ bin.v2/libs/chrono/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/chrono.o
+gcc.compile.c++ bin.v2/libs/chrono/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/thread_clock.o
+gcc.compile.c++ bin.v2/libs/chrono/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/process_cpu_clocks.o
+gcc.archive bin.v2/libs/chrono/build/gcc-7.4.0/debug/link-static/threading-multi/visibility-hidden/libboost_chrono-mt-d-x64.a
+common.copy /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Build/Boost/__log/Source/stage/lib/libboost_chrono-mt-d-x64.a
+...on 100th target...
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/attribute_name.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/attribute_set.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/attribute_value_set.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/code_conversion.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/core.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/record_ostream.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/severity_level.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/global_logger_storage.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/named_scope.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/process_name.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/process_id.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/thread_id.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/timer.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/exceptions.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/default_attribute_names.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/default_sink.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/text_ostream_backend.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/text_file_backend.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/text_multifile_backend.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/thread_specific.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/once_block.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/timestamp.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/threadsafe_queue.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/event.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/trivial.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/spirit_encoding.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/format_parser.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/date_time_format_parser.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/named_scope_format_parser.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/permissions.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/dump.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/dump_avx2.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/dump_ssse3.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/syslog_backend.o
+gcc.archive bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/libboost_log-mt-d-x64.a
+common.copy /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Build/Boost/__log/Source/stage/lib/libboost_log-mt-d-x64.a
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/parser_utils.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/init_from_stream.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/init_from_settings.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/settings_parser.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/filter_parser.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/formatter_parser.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/default_filter_factory.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/matches_relation_factory.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/default_formatter_factory.o
+gcc.archive bin.v2/libs/log/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/libboost_log_setup-mt-d-x64.a
+common.copy /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Build/Boost/__log/Source/stage/lib/libboost_log_setup-mt-d-x64.a
+gcc.compile.c++ bin.v2/libs/atomic/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/lockpool.o
+gcc.archive bin.v2/libs/atomic/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/libboost_atomic-mt-x64.a
+common.copy /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Build/Boost/__log/Source/stage/lib/libboost_atomic-mt-x64.a
+gcc.compile.c++ bin.v2/libs/date_time/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/gregorian/greg_month.o
+gcc.compile.c++ bin.v2/libs/date_time/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/gregorian/greg_weekday.o
+gcc.compile.c++ bin.v2/libs/date_time/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/gregorian/date_generators.o
+gcc.archive bin.v2/libs/date_time/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/libboost_date_time-mt-x64.a
+common.copy /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Build/Boost/__log/Source/stage/lib/libboost_date_time-mt-x64.a
+gcc.compile.c++ bin.v2/libs/filesystem/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/codecvt_error_category.o
+gcc.compile.c++ bin.v2/libs/filesystem/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/operations.o
+gcc.compile.c++ bin.v2/libs/filesystem/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/path.o
+gcc.compile.c++ bin.v2/libs/filesystem/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/path_traits.o
+gcc.compile.c++ bin.v2/libs/filesystem/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/portability.o
+gcc.compile.c++ bin.v2/libs/filesystem/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/unique_path.o
+gcc.compile.c++ bin.v2/libs/filesystem/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/utf8_codecvt_facet.o
+gcc.compile.c++ bin.v2/libs/filesystem/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/windows_file_codecvt.o
+gcc.archive bin.v2/libs/filesystem/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/libboost_filesystem-mt-x64.a
+common.copy /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Build/Boost/__log/Source/stage/lib/libboost_filesystem-mt-x64.a
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/c_regex_traits.o
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/cpp_regex_traits.o
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/cregex.o
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/fileiter.o
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/icu.o
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/instances.o
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/posix_api.o
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/regex.o
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/regex_debug.o
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/regex_raw_buffer.o
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/regex_traits_defaults.o
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/static_mutex.o
+...on 200th target...
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/w32_regex_traits.o
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/wc_regex_traits.o
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/wide_posix_api.o
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/winstances.o
+gcc.compile.c++ bin.v2/libs/regex/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/usinstances.o
+gcc.archive bin.v2/libs/regex/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/libboost_regex-mt-x64.a
+common.copy /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Build/Boost/__log/Source/stage/lib/libboost_regex-mt-x64.a
+gcc.compile.c++ bin.v2/libs/thread/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/pthread/thread.o
+gcc.compile.c++ bin.v2/libs/thread/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/pthread/once.o
+gcc.compile.c++ bin.v2/libs/thread/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/future.o
+gcc.archive bin.v2/libs/thread/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/libboost_thread-mt-x64.a
+common.copy /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Build/Boost/__log/Source/stage/lib/libboost_thread-mt-x64.a
+gcc.compile.c++ bin.v2/libs/chrono/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/chrono.o
+gcc.compile.c++ bin.v2/libs/chrono/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/thread_clock.o
+gcc.compile.c++ bin.v2/libs/chrono/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/process_cpu_clocks.o
+gcc.archive bin.v2/libs/chrono/build/gcc-7.4.0/release/link-static/threading-multi/visibility-hidden/libboost_chrono-mt-x64.a
+common.copy /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Build/Boost/__log/Source/stage/lib/libboost_chrono-mt-x64.a
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/attribute_name.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/attribute_set.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/attribute_value_set.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/code_conversion.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/core.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/record_ostream.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/severity_level.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/global_logger_storage.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/named_scope.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/process_name.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/process_id.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/thread_id.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/timer.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/exceptions.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/default_attribute_names.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/default_sink.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/text_ostream_backend.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/text_file_backend.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/text_multifile_backend.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/thread_specific.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/once_block.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/timestamp.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/threadsafe_queue.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/event.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/trivial.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/spirit_encoding.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/format_parser.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/date_time_format_parser.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/named_scope_format_parser.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/permissions.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/dump.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/syslog_backend.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/dump_avx2.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/dump_ssse3.o
+gcc.archive bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/libboost_log-mt-x64.a
+common.copy /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Build/Boost/__log/Source/stage/lib/libboost_log-mt-x64.a
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/parser_utils.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/init_from_stream.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/init_from_settings.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/settings_parser.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/filter_parser.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/formatter_parser.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/default_filter_factory.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/matches_relation_factory.o
+gcc.compile.c++ bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/setup/default_formatter_factory.o
+gcc.archive bin.v2/libs/log/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/libboost_log_setup-mt-x64.a
+common.copy /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Build/Boost/__log/Source/stage/lib/libboost_log_setup-mt-x64.a
+...updated 284 targets...
+
+
+The Boost C++ Libraries were successfully built!
+
+The following directory should be added to compiler include paths:
+
+    /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Build/Boost/__log/Source
+
+The following directory should be added to linker library paths:
+
+    /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Build/Boost/__log/Source/stage/lib
+
+[ 87%] Performing install step for 'Boost-log'
+Performing configuration checks
+
+    - default address-model    : 64-bit
+    - default architecture     : x86
+    - native-atomic-int32-supported : yes
+    - native-syslog-supported  : yes
+    - pthread-supports-robust-mutexes : no
+    - has_icu builds           : no
+    - lockfree boost::atomic_flag : yes
+    - compiler-supports-ssse3  : yes
+    - compiler-supports-avx2   : yes
+
+Component configuration:
+
+    - atomic                   : not building
+    - chrono                   : not building
+    - container                : not building
+    - context                  : not building
+    - contract                 : not building
+    - coroutine                : not building
+    - date_time                : not building
+    - exception                : not building
+    - fiber                    : not building
+    - filesystem               : not building
+    - graph                    : not building
+    - graph_parallel           : not building
+    - headers                  : not building
+    - iostreams                : not building
+    - locale                   : not building
+    - log                      : building
+    - math                     : not building
+    - mpi                      : not building
+    - program_options          : not building
+    - python                   : not building
+    - random                   : not building
+    - regex                    : not building
+    - serialization            : not building
+    - stacktrace               : not building
+    - system                   : not building
+    - test                     : not building
+    - thread                   : not building
+    - timer                    : not building
+    - type_erasure             : not building
+    - wave                     : not building
+
+[100%] Completed 'Boost-log'
+[100%] Built target Boost-log
+-- [hunter] Build step successful (dir: /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Build/Boost/__log)
+-- [hunter] Cache saved: /home/zamot/.hunter/_Base/Cache/raw/fa26948d57932604f17b549fa6d91c43ca07d99c.tar.bz2
 -- [hunter] BOOST_ROOT: /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Install (ver.: 1.70.0-p0)
+-- [hunter] Building Boost (component: thread)
+loading initial cache file /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/cache.cmake
+loading initial cache file /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Build/Boost/__thread/args.cmake
+-- The C compiler identification is GNU 7.4.0
+-- The CXX compiler identification is GNU 7.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++.exe
+-- Check for working CXX compiler: /usr/bin/c++.exe -- works
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Build/Boost/__thread/Build
+Scanning dependencies of target Boost-thread
+[ 12%] Creating directories for 'Boost-thread'
+[ 25%] Performing download step (download, verify and extract) for 'Boost-thread'
+-- verifying file...
+       file='/home/zamot/.hunter/_Base/Download/Boost/1.70.0-p0/e6bb97b/v1.70.0-p0.tar.gz'
+-- File already exists and hash match (skip download):
+  file='/home/zamot/.hunter/_Base/Download/Boost/1.70.0-p0/e6bb97b/v1.70.0-p0.tar.gz'
+  SHA1='e6bb97b5109c7c15ea459cf2b1a9d52cbf88a89e'
+-- extracting...
+     src='/home/zamot/.hunter/_Base/Download/Boost/1.70.0-p0/e6bb97b/v1.70.0-p0.tar.gz'
+     dst='/home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Build/Boost/__thread/Source'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 37%] No patch step for 'Boost-thread'
+[ 50%] Performing update step for 'Boost-thread'
+[ 62%] Performing configure step for 'Boost-thread'
+Dummy patch command
+Building Boost.Build engine with toolset gcc... tools/build/src/engine/bin.cygwinx86_64/b2
+Detecting Python version... 2.7
+Detecting Python root... /usr
+Unicode/ICU support for Boost.Regex?... not found.
+Generating Boost.Build configuration in project-config.jam for gcc...
+
+Bootstrapping is done. To build, run:
+
+    ./b2
+    
+To generate header files, run:
+
+    ./b2 headers
+
+To adjust configuration, edit 'project-config.jam'.
+Further information:
+
+   - Command line help:
+     ./b2 --help
+     
+   - Getting started guide: 
+     http://www.boost.org/more/getting_started/unix-variants.html
+     
+   - Boost.Build documentation:
+     http://www.boost.org/build/
+
+[ 75%] Performing build step for 'Boost-thread'
+Performing configuration checks
+
+    - default address-model    : 64-bit
+    - default architecture     : x86
+
+Building the Boost C++ Libraries.
+
+
+    - lockfree boost::atomic_flag : yes
+
+Component configuration:
+
+    - atomic                   : not building
+    - chrono                   : not building
+    - container                : not building
+    - context                  : not building
+    - contract                 : not building
+    - coroutine                : not building
+    - date_time                : not building
+    - exception                : not building
+    - fiber                    : not building
+    - filesystem               : not building
+    - graph                    : not building
+    - graph_parallel           : not building
+    - headers                  : not building
+    - iostreams                : not building
+    - locale                   : not building
+    - log                      : not building
+    - math                     : not building
+    - mpi                      : not building
+    - program_options          : not building
+    - python                   : not building
+    - random                   : not building
+    - regex                    : not building
+    - serialization            : not building
+    - stacktrace               : not building
+    - system                   : not building
+    - test                     : not building
+    - thread                   : building
+    - timer                    : not building
+    - type_erasure             : not building
+    - wave                     : not building
+
+...patience...
+...found 1277 targets...
+...updating 25 targets...
+gcc.compile.c++ bin.v2/libs/thread/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/pthread/thread.o
+gcc.compile.c++ bin.v2/libs/thread/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/pthread/once.o
+gcc.compile.c++ bin.v2/libs/thread/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/future.o
+gcc.archive bin.v2/libs/thread/build/gcc-7.4.0/debug/link-static/threadapi-pthread/threading-multi/visibility-hidden/libboost_thread-mt-d-x64.a
+common.copy /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Build/Boost/__thread/Source/stage/lib/libboost_thread-mt-d-x64.a
+gcc.compile.c++ bin.v2/libs/thread/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/pthread/thread.o
+gcc.compile.c++ bin.v2/libs/thread/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/pthread/once.o
+gcc.compile.c++ bin.v2/libs/thread/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/future.o
+gcc.archive bin.v2/libs/thread/build/gcc-7.4.0/release/link-static/threadapi-pthread/threading-multi/visibility-hidden/libboost_thread-mt-x64.a
+common.copy /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Build/Boost/__thread/Source/stage/lib/libboost_thread-mt-x64.a
+...updated 25 targets...
+
+
+The Boost C++ Libraries were successfully built!
+
+The following directory should be added to compiler include paths:
+
+    /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Build/Boost/__thread/Source
+
+The following directory should be added to linker library paths:
+
+    /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Build/Boost/__thread/Source/stage/lib
+
+[ 87%] Performing install step for 'Boost-thread'
+Performing configuration checks
+
+    - default address-model    : 64-bit
+    - default architecture     : x86
+    - lockfree boost::atomic_flag : yes
+
+Component configuration:
+
+    - atomic                   : not building
+    - chrono                   : not building
+    - container                : not building
+    - context                  : not building
+    - contract                 : not building
+    - coroutine                : not building
+    - date_time                : not building
+    - exception                : not building
+    - fiber                    : not building
+    - filesystem               : not building
+    - graph                    : not building
+    - graph_parallel           : not building
+    - headers                  : not building
+    - iostreams                : not building
+    - locale                   : not building
+    - log                      : not building
+    - math                     : not building
+    - mpi                      : not building
+    - program_options          : not building
+    - python                   : not building
+    - random                   : not building
+    - regex                    : not building
+    - serialization            : not building
+    - stacktrace               : not building
+    - system                   : not building
+    - test                     : not building
+    - thread                   : building
+    - timer                    : not building
+    - type_erasure             : not building
+    - wave                     : not building
+
+[100%] Completed 'Boost-thread'
+[100%] Built target Boost-thread
+-- [hunter] Build step successful (dir: /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Build/Boost/__thread)
+-- [hunter] Cache saved: /home/zamot/.hunter/_Base/Cache/raw/fa88b984a71fd3f86da589433a9205242c955af2.tar.bz2
 -- [hunter] BOOST_ROOT: /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Install (ver.: 1.70.0-p0)
 -- [hunter] BOOST_ROOT: /home/zamot/.hunter/_Base/9a3594a/0a1854b/c351cc1/Install (ver.: 1.70.0-p0)
 -- Boost version: 1.70.0
@@ -15,6 +575,13 @@ C:\Users\zamot\.CLion2019.2\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE
 --   thread
 --   filesystem
 --   system
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Looking for clock_gettime
+-- Looking for clock_gettime - found
 -- Configuring done
 -- Generating done
--- Build files have been written to: /cygdrive/c/Git/laba6/cmake-build-debug
+-- Build files have been written to: /cygdrive/d/Projects/laba6/cmake-build-debug

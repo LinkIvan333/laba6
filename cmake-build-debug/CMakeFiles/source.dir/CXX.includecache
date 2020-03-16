@@ -23,8 +23,6 @@ boost/thread.hpp
 -
 
 ../include/logs.h
-boost/log/trivial.hpp
--
 boost/log/expressions.hpp
 -
 boost/log/sinks.hpp
@@ -64,7 +62,7 @@ vector
 fstream
 -
 
-/cygdrive/c/Git/laba6/sources/source.cpp
+/cygdrive/d/Projects/laba6/sources/source.cpp
 header.hpp
 -
 logs.h

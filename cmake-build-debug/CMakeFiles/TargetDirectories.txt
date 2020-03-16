@@ -1,4 +1,4 @@
-/cygdrive/c/Git/laba6/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/cygdrive/c/Git/laba6/cmake-build-debug/CMakeFiles/edit_cache.dir
-/cygdrive/c/Git/laba6/cmake-build-debug/CMakeFiles/source.dir
-/cygdrive/c/Git/laba6/cmake-build-debug/CMakeFiles/test.dir
+/cygdrive/d/Projects/laba6/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/cygdrive/d/Projects/laba6/cmake-build-debug/CMakeFiles/edit_cache.dir
+/cygdrive/d/Projects/laba6/cmake-build-debug/CMakeFiles/source.dir
+/cygdrive/d/Projects/laba6/cmake-build-debug/CMakeFiles/test.dir

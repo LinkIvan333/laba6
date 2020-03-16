@@ -3,7 +3,10 @@
 #include <header.hpp>
 #include <logs.h>
 #include <thread>
-int main() {
-    header::startTreads();
+int main(int argc, char *argv[]) {
+    unsigned int m = std::thread::hardware_concurrency();
+    if ((argc > 1) && (atoi(argv[1])))
+        m=atoi(argv[1]);
+    header::startTreads(m);
     return 0;
 }
